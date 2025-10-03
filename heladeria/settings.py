@@ -151,12 +151,12 @@ if not DEBUG:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS=[
     "http://localhost:5173",
     "https://perfumeria-z0gh.onrender.com",
+    ""https://perfumeria-z0gh.onrender.com/",
     "https://perfumeriadjango.onrender.com/perfumes",
-    
+    ['*']
 ]
 
 # Configuración adicional recomendada
@@ -170,3 +170,5 @@ CORS_ALLOW_METHODS = [
     'PUT',
 ]
 CORS_ALLOW_HEADERS = ['*']
+
+CORS_ALLOW_ALL_ORIGINS = True
