@@ -7,5 +7,6 @@ router = routers.DefaultRouter()
 router.register(r'perfumes', PerfumesView)
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('perfumes/', views.PerfumeViewSet.as_view({'get': 'list'}), name='perfume-list'),
 ]
