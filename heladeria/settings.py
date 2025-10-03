@@ -24,7 +24,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = ["http://localhost:5173","https://perfumeria-z0gh.onrender.com/","127.0.0.1","localhost:8000","localhost","https://perfumeria-z0gh.onrender.com"]
+ALLOWED_HOSTS = ["http://localhost:5173","https://perfumeria-z0gh.onrender.com/","https://perfumeriadjango.onrender.com/perfumes/","127.0.0.1","localhost:8000","localhost","https://perfumeria-z0gh.onrender.com"]
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
@@ -144,7 +144,8 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS=[
     "http://localhost:5173"
-    "https://perfumeria-z0gh.onrender.com/"
+    "https://perfumeria-z0gh.onrender.com"
+    "https://perfumeriadjango.onrender.com/perfumes"
 ]
 
 CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
