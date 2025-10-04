@@ -155,8 +155,8 @@ CORS_ALLOWED_ORIGINS=[
     "http://localhost:5173",
     "https://perfumeria-z0gh.onrender.com",
     "https://perfumeria-z0gh.onrender.com/",
-    "https://perfumeriadjango.onrender.com/perfumes",
-    ['*']
+    "https://perfumeriadjango.onrender.com/perfumes"
+
 ]
 
 # Configuración adicional recomendada
