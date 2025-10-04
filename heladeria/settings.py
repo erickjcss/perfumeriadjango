@@ -170,7 +170,10 @@ CORS_ALLOW_METHODS = [
     'PUT',
 ]
 CORS_ALLOW_HEADERS = ['*']
-
+CORS_ALLOWED_ORIGIN_REGEXES = [
+   "https://perfumeria-z0gh.onrender.com",
+    "https://perfumeria-z0gh.onrender.com/"
+]
 CORS_ALLOW_ALL_ORIGINS = True
 CSRF_TRUSTED_ORIGINS = ["https://perfumeria-z0gh.onrender.com",
     "https://perfumeria-z0gh.onrender.com/",]
