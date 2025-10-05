@@ -154,8 +154,8 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS=[
     "http://localhost:5173",
     "https://perfumeria-z0gh.onrender.com",
-    "https://perfumeria-z0gh.onrender.com/",
-    "https://perfumeriadjango.onrender.com/perfumes"
+    "https://perfumeria-z0gh.onrender.com",
+    "https://perfumeriadjango.onrender.com"
 
 ]
 
@@ -172,8 +172,8 @@ CORS_ALLOW_METHODS = [
 CORS_ALLOW_HEADERS = ['*']
 CORS_ALLOWED_ORIGIN_REGEXES = [
    "https://perfumeria-z0gh.onrender.com",
-    "https://perfumeria-z0gh.onrender.com/"
+    "https://perfumeria-z0gh.onrender.com"
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 CSRF_TRUSTED_ORIGINS = ["https://perfumeria-z0gh.onrender.com",
-    "https://perfumeria-z0gh.onrender.com/",]
+    "https://perfumeria-z0gh.onrender.com",]
