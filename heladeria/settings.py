@@ -88,13 +88,17 @@ WSGI_APPLICATION = 'heladeria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
-    )
-}
+
+    DATABASES = {
+       'default': {
+           'ENGINE': 'django.db.backends.postgresql',
+           'NAME': os.environ.get('DATABASE_NAME'),
+           'USER': os.environ.get('DATABASE_USER'),
+           'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+           'HOST': os.environ.get('DATABASE_HOST'),
+           'PORT': os.environ.get('DATABASE_PORT', '5432'),  # Valor por defecto
+       }
+   }
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',  # Permite cualquier método
